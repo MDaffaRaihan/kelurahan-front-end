@@ -1,0 +1,61 @@
+/* Reset and global styles */
+:root {
+  --mint-100: #e9f9ef;
+  --mint-200: #d6f3e6;
+  --mint-300: #c5efe0;
+  --mint-400: #1fa87b;
+  --text: #0e2a24;
+  --muted: #6b6b6b;
+  --card-bg: #ffffff;
+  --shadow: 0 6px 18px rgba(16, 31, 20, 0.06);
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #dff9f0 0%, #eafdf6 100%);
+  color: var(--text);
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: var(--mint-100);
+  box-shadow: var(--shadow);
+}
+
+.sidebar .brand {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .brand .logo {
+  width: 56px;
+  height: 56px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav a {
+  color: var(--text);
+}
+
+.sidebar nav a.active {
+  background: var(--mint-200);
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
